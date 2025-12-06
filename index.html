@@ -17,7 +17,12 @@
     .membershipplan { display:flex; gap:2rem; flex-wrap:wrap; }
     .card { border:1px solid #ccc; padding:1rem; flex:1; text-align:center; background:#f9f9f9; }
     footer { background:#333; color:white; text-align:center; padding:1rem; }
-	
+	.responsive-img {
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
+    height: auto;    /* Maintains the aspect ratio */
+    width: 100%;    /* Optional: Sets a maximum display width if the container is large */
+}
+
   </style>
 </head>
 
@@ -27,7 +32,7 @@
     <p>Where Fun Meets Party!</p>
   </header>
   
-  <img src="https://github.com/sumghosh80/VPLAYNPARTY/blob/main/VPLAYNPARTY.jpg?raw="true""; >
+  <img src="https://github.com/sumghosh80/VPLAYNPARTY/blob/main/VPLAYNPARTY.jpg?raw="true"" class="responsive-img"; >
     
   <section id="contact">
 <style>
@@ -79,6 +84,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
