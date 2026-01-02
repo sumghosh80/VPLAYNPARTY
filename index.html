@@ -21,6 +21,26 @@
     max-width: 100%; /* Ensures the image doesn't exceed its container's width */
     height: auto;    /* Maintains the aspect ratio */
     width: 100%;    /* Optional: Sets a maximum display width if the container is large */
+	.image-container {
+  	display: flex; /* Aligns child elements side-by-side */
+  	gap: 20px;     /* Adds space between the images */
+	}
+	.image-container img {
+  	max-width: 100%; /* Ensures images are responsive within their container */
+  	height: auto;
+	}
+		.float-left-img {
+  		float: left;        /* Floats the images to the left */
+  		margin-right: 10px; /* Adds space between the images */
+  		width: 50%;         /* Sets each image to occupy half the width */
+		}
+	/* Clear floats after the image container to prevent layout issues with subsequent content */
+		.row::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+		}
+
 }
 
   </style>
@@ -86,6 +106,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
